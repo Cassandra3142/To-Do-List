@@ -7,10 +7,12 @@ function deleteToDo(event) {
     li.remove();
 }
 
-const toDos = [];
+const TODOS_KEY = "todos";
+
+let toDos = [];
 
 function saveToDos() {
-    localStorage.setItem("todos",JSON.stringify(toDos));
+    localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
 }
 
 function paintToDo(newTodo) {
@@ -35,3 +37,10 @@ function handleToDoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit",handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if (savedToDos !== null) {
+    const parsedToDos = JSON.parse(savedToDos);
+    parsedToDos.forEach(paintToDo);
+}
