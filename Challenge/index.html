@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <h2 id="clock"></h2>
@@ -14,7 +14,12 @@
         <input required maxlength="15" type="text" placeholder="What's your name?">
         <input type="submit" value="Log In">
     </form>
-    <script src="username.js"></script>
-    <script src="clock.js"></script>
+    <form id="todo_form">
+        <input type="text" placeholder="Write here your ToDoList">
+    </form>
+    <ul id="todo_list"></ul>
+    <script src="./JS/username.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/todo.js"></script>
 </body>
 </html>
