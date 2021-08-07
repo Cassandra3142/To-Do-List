@@ -8,19 +8,36 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <h2 id="clock"></h2>
-    <h1 class="hidden" id="nickname"></h1>
-    <form id="login_form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What's your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <form id="todo_form">
-        <input type="text" placeholder="Write here your ToDoList">
-    </form>
-    <ul id="todo_list"></ul>
+    <div id="bgimg"></div>
+    <header id="clock_section">
+        <h2 id="clock"></h2>
+    </header>
+    <section>
+        <h1 class="hidden" id="nickname"></h1>
+        <form id="login_form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What's your name?">
+            <input type="submit" value="Log In">
+        </form>
+        <form id="todo_form">
+            <input type="text" placeholder="Write here your ToDoList">
+        </form>
+        <ul id="todo_list"></ul>
+    </section>
+    <footer>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
     <script src="./JS/username.js"></script>
     <script src="./JS/clock.js"></script>
     <script src="./JS/todo.js"></script>
     <script src="./JS/background.js"></script>
+    <script src="./JS/weather.js"></script>
+    <script src="./JS/quotes.js"></script>
 </body>
 </html>

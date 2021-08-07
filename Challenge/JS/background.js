@@ -1,9 +1,13 @@
-const images = ["0.webp","1.webp","2.webp","3.webp","4.webp"];
+const background = document.querySelector('#bgimg');
+const images = ["0.jpg","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg" ];
 
-const chosenImages = images[Math.floor(Math.random() * images.length)];
+const randomBg = () => {
+    const chosenImages = images[Math.floor(Math.random() * images.length)];
+    background.style.backgroundImage = `url(./img/${chosenImages}) `
+}
 
-const bgImage = document.createElement("img");
+const bgImg = () => {
+    randomBg();
+}
 
-bgImage.src = `img/${chosenImages}`;
-
-document.body.appendChild(bgImage);
+bgImg();
