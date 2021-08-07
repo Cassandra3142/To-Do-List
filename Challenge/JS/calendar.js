@@ -10,7 +10,7 @@ function getCalendar() {
     const date = String(currentDate.getDate()).padStart(2, "0");
     const day = currentDate.getDay();
 
-    calendar.innerText = `${year} - ${month} - ${date} - ${week[day]}`;
+    calendar.innerText = `${year} - ${month} - ${date} (${week[day]})`;
 }
 
 getCalendar();

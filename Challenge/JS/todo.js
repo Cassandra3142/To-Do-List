@@ -22,11 +22,11 @@ function listUpdate(newToDo) {
     li.id = newToDo.id;
     const span = document.createElement('span');
     span.innerText = newToDo.text;
-    const button = document.createElement('button');
-    button.innerText = '❌';
-    button.addEventListener('click',deleteToDo);
+    const button1 = document.createElement('button');
+    button1.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+    button1.addEventListener('click',deleteToDo);
     li.appendChild(span);
-    li.appendChild(button);
+    li.appendChild(button1);
     toDoList.appendChild(li);
 }
 
