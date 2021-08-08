@@ -23,7 +23,7 @@ function listUpdate(newToDo) {
     const span = document.createElement('span');
     span.innerText = newToDo.text;
     const button1 = document.createElement('button');
-    button1.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+    button1.innerHTML = `❌`;
     button1.addEventListener('click',deleteToDo);
     li.appendChild(span);
     li.appendChild(button1);
