@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./CSS/Reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body class="container">
+    <div id="bgimg"></div>
+    <section id="section_1">
+        <h2 id="calendar"></h2>
+        <h2 id="clock"></h2>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="quote">
+            <span id="quotes"></span>
+            <span id="named"></span>
+        </div>
+    </section>
+    <section id="section_2">
+        <div id="part_1">
+        <h1 class="hidden" id="nickname"></h1>
+        <form id="login_form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What's your name?">
+            <input type="submit" value="Log In">
+        </form>
+        </div>
+        <div id="part_2">
+        <form id="todo_form">
+            <i class="fas fa-list-ul"></i><input required type="text" placeholder="Write here your ToDoList">
+        </form>
+        <ul id="todo_list"></ul>
+        </div>
+    </section>
+    <section id="section_3">
+        <div id="finish">
+            <h1>추가기능 준비중...</h1>
+        </div>
+    </section>
+    <script src="./JS/calendar.js"></script>
+    <script src="./JS/username.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/todo.js"></script>
+    <script src="./JS/background.js"></script>
+    <script src="./JS/weather.js"></script>
+    <script src="./JS/quotes.js"></script>
+</body>
+</html>
